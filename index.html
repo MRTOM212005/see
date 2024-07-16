@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện Video và Hình ảnh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Thư viện Video và Hình ảnh</h1>
+            <button class="toggle-theme" onclick="toggleTheme()">Chuyển Đổi Chế Độ</button>
+        </header>
+        <main>
+            <section class="media-section">
+                <h2>Video</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                    <video controls>
+                        <source src="video3.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                </div>
+            </section>
+            <section class="media-section">
+                <h2>Hình ảnh</h2>
+                <div class="image-container">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image2.jpg" alt="Image 2">
+                    <img src="image3.jpg" alt="Image 3">
+                </div>
+            </section>
+            <section class="comment-section">
+                <h2>Bình luận</h2>
+                <form class="comment-form" id="commentForm">
+                    <textarea id="commentText" rows="4" placeholder="Viết bình luận của bạn ở đây..."></textarea>
+                    <button type="button" onclick="submitComment()">Gửi</button>
+                </form>
+                <div class="comments" id="comments">
+                    <!-- Bình luận sẽ được hiển thị ở đây -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Thư viện Media</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
